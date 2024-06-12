@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Spawner), typeof(MeshRenderer), typeof(Exploder))]
+[RequireComponent(typeof(Spawner), typeof(Exploder))]
 
 public class Cube : MonoBehaviour
 {
@@ -36,7 +36,7 @@ public class Cube : MonoBehaviour
 
         int randomChanceToDivide = Random.Range(minDivideChance, maxDivideChance);
 
-        if (randomChanceToDivide <= _spawner._chanceToDivide)
+        if (randomChanceToDivide <= _spawner.chanceToDivide)
         {
             _spawner.SpawnObjects();
         }
