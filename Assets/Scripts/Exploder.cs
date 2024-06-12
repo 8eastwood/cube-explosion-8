@@ -11,7 +11,9 @@ public class Exploder : MonoBehaviour
 
     public void Explode()
     {
-        foreach (Rigidbody explodableObject in GetExplodableObjects())
+        List<Rigidbody> explodableObjects = GetExplodableObjects();
+
+        foreach (Rigidbody explodableObject in explodableObjects)
         {
             explodableObject.AddExplosionForce(GetExplosionForce(), transform.position, GetExplosionRadius());
         }

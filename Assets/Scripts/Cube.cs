@@ -1,11 +1,10 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Spawner))]
-[RequireComponent(typeof(Exploder))]
+[RequireComponent(typeof(Spawner), typeof(MeshRenderer), typeof(Exploder))]
 
 public class Cube : MonoBehaviour
 {
-    [SerializeField] private MeshRenderer _cube;
+    [SerializeField] public MeshRenderer renderer;
     [SerializeField] private Color[] _colors;
 
     private Spawner _spawner;
@@ -15,7 +14,7 @@ public class Cube : MonoBehaviour
     {
         _exploder = GetComponent<Exploder>();
         _spawner = GetComponent<Spawner>();
-        SetRandomColor(_spawner._meshRenderer);
+        SetRandomColor(renderer);
     }
 
     private void OnMouseDown()
