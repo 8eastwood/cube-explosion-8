@@ -15,6 +15,7 @@ public class Cube : MonoBehaviour
     {
         _exploder = GetComponent<Exploder>();
         _spawner = GetComponent<Spawner>();
+        SetRandomColor(_spawner._meshRenderer);
     }
 
     private void OnMouseDown()
@@ -22,7 +23,7 @@ public class Cube : MonoBehaviour
         SpawnDividedObjects();
     }
 
-    public void SetRandomColor(MeshRenderer meshRenderer)
+    private void SetRandomColor(MeshRenderer meshRenderer)
     {
         int minColorNumber = 0;
         int randomColor = Random.Range(minColorNumber, _colors.Length);

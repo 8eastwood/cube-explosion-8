@@ -14,6 +14,7 @@ class Spawner : MonoBehaviour
 
     private void Awake()
     {
+        _cube = GetComponent<Cube>();
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -28,8 +29,7 @@ class Spawner : MonoBehaviour
 
         for (int i = 0; i < _randomInstantiateAmount; i++)
         {
-            MeshRenderer renderer = Instantiate(_meshRenderer, transform.position, Quaternion.identity);
-            _cube.SetRandomColor(renderer);
+            Instantiate(_meshRenderer, transform.position, Quaternion.identity);
         }
     }
 }
