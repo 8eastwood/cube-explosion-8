@@ -4,7 +4,7 @@ using UnityEngine;
 
 class Spawner : MonoBehaviour
 {
-    [SerializeField] public int chanceToDivide = 100;
+    [SerializeField] private int _chanceToDivide = 100;
     [SerializeField] private int _minInstantiateNumber = 2;
     [SerializeField] private int _maxInstantiateNumber = 6;
 
@@ -23,11 +23,18 @@ class Spawner : MonoBehaviour
 
         _randomInstantiateAmount = Random.Range(_minInstantiateNumber, _maxInstantiateNumber + 1);
         transform.localScale *= scaleMultiplier;
-        chanceToDivide /= divider;
+        _chanceToDivide /= divider;
 
         for (int i = 0; i < _randomInstantiateAmount; i++)
         {
             Instantiate(_cube.renderer, transform.position, Quaternion.identity);
         }
+    }
+
+    public int PassChanceToDivide()
+    {
+        int chance = _chanceToDivide;
+
+        return chance;
     }
 }

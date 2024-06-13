@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    [SerializeField] public MeshRenderer renderer;
+    [field: SerializeField] public MeshRenderer renderer { get; private set; }
     [SerializeField] private Color[] _colors;
 
     private Spawner _spawner;
@@ -36,7 +36,7 @@ public class Cube : MonoBehaviour
 
         int randomChanceToDivide = Random.Range(minDivideChance, maxDivideChance);
 
-        if (randomChanceToDivide <= _spawner.chanceToDivide)
+        if (randomChanceToDivide <= GetChanceToDivide())
         {
             _spawner.SpawnObjects();
         }
@@ -46,5 +46,10 @@ public class Cube : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    private int GetChanceToDivide()
+    {
+        return _spawner.PassChanceToDivide();
     }
 }

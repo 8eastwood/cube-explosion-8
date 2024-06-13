@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 351599565}
+  <renderer>k__BackingField: {fileID: 351599565}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1140145026}
+  <renderer>k__BackingField: {fileID: 1140145026}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1373685473}
+  <renderer>k__BackingField: {fileID: 1373685473}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1657943436}
+  <renderer>k__BackingField: {fileID: 1657943436}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1680600393}
+  <renderer>k__BackingField: {fileID: 1680600393}
   _colors:
   - {r: 0, g: 0.5686275, b: 0.9529412, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1777977489}
+  <renderer>k__BackingField: {fileID: 1777977489}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
@@ -1911,7 +1911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9964c4763755e184a8e1db80aabf7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 1829053963}
+  <renderer>k__BackingField: {fileID: 1829053963}
   _colors:
   - {r: 0.04705883, g: 0.29803923, b: 0.5647059, a: 0}
   - {r: 1, g: 1, b: 1, a: 0}
